@@ -3,7 +3,8 @@
 Writes one deterministic image to /output/entry.png by copying the
 image this repository holds (image.png, 1024x1024, built by
 build_image.py). No network, no randomness, no input, no dependencies
-beyond the Python standard library.
+beyond the Python standard library. The output is byte-identical on
+every run because the copied file never changes.
 """
 from pathlib import Path
 import shutil
